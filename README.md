@@ -12,4 +12,6 @@ En cada uno de estos issues encontrarás una descripción detallada de el task d
 
 Cuando decidas empezar un issue, deja un comentario explicando que tienes pensado hacer en el thread del issue. Cuando un moderador lo apruebe, se te asignará el issue y se le agregrará la etiqueta de "en curso", lo que significa que nadie más puede contribuir a ese issue hasta que tu lo finalices.
 
+En [el proyecto "issues" de GitCollab](https://github.com/pythonmurcia/gitcollab/projects/1) hay una representación gráfica con targetas de todos los issues, los abiertos, aquellos que están en progreso, los issues por revisar, los revisados y los cerrados. **Un administrador o moderador se encarga de actualizar el proyecto cada hora**.
+
 ###### Recuerda seguirnos en [Twitter](https://twitter.com/pythonmurcia) y unirte a [nuestro grupo de Telegram](https://t.me/pythonmurcia)
