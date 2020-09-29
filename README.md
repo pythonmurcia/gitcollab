@@ -9,6 +9,7 @@ GitCollab es un proyecto open source creado por la organización de Python Murci
 
 **La idea del proyecto es simple, que otros  programadores puedan encontrar proyectos en los que contribuir y que tu puedas encontrar contribuidores para tus proyectos.**
 
+##### GitCollab tiene un grupo de Telegram al que te puedes unir para hablar con otras personas que participen en este proyecto. Únete [aqui](https://t.me/gitcollab)
 ---
 
 ### Como contribuir
