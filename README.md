@@ -1,9 +1,15 @@
 <h1 align="center">GitCollab</h1>
 <p align="center">
-  <a href="https://github.com/pythonmurcia/gitcollab/blob/master/LICENSE">
-    <img alt="License: Apache 2.0" src="https://img.shields.io/hexpm/l/plug?color=gre&label=LICENSE" target="_blank"/>
+  <a href="https://github.com/pythonmurcia/gitcollab/blob/master/LICENSE" target="_blank">
+    <img alt="License: Apache 2.0" src="https://img.shields.io/hexpm/l/plug?color=gre&label=LICENSE"/>
   </a>
 </p>
+<p align="center">
+    <img alt="forks" src="https://img.shields.io/github/forks/pythonmurcia/gitcollab?label=Forks&style=social"/>
+    <img alt="stars" src="https://img.shields.io/github/stars/pythonmurcia/gitcollab?style=social"/>
+    <img alt="stars" src="https://img.shields.io/github/watchers/pythonmurcia/gitcollab?style=social"/>
+</p>
+
 
 GitCollab es un proyecto open source creado por la organización de Python Murcia para el [HactoberfestES 2020](https://hacktoberfest.es.python.org/)
 
