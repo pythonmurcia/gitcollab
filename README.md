@@ -10,6 +10,9 @@ GitCollab es un proyecto open source creado por la organización de Python Murci
 **La idea del proyecto es simple, que otros  programadores puedan encontrar proyectos en los que contribuir y que tu puedas encontrar contribuidores para tus proyectos.**
 
 ### Para contribuir al proyecto, lee el archivo [contribute.md](https://github.com/pythonmurcia/gitcollab/blob/master/contribute.md)
+
+Recuerda que todos los commits deben de estar en Español y que cada directorio del proyecto tiene archivos que explican su funcionalidad.
+
 ### Licencia
 
 GitCollab es un proyecto de código abierto que opera bajo la licencia Apache 2.0, que puedes leer en el archivo [LICENSE](https://github.com/pythonmurcia/gitcollab/blob/master/LICENSE) del repositorio.
