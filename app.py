@@ -1,3 +1,15 @@
-# Este archivo es el archivo Python principal del repositorio, en el la estructura básica en Flask tiene que ser creada y manejada.
-# Tareas relaccionadas:
-#   #1 - Crear la estructura básica de un proyecto en Flask
+from flask import Flask
+
+app = Flask(__name__, 
+            static_url_path="", 
+            static_folder="static",
+            template_folder="templates"
+        )
+
+@app.route("/")
+def home():
+    return "<h1>Gitcollab</h1><p>Página inicial (home)</p>"
+    
+if __name__ == "__main__":
+    # Importante desactivar esto en producción
+    app.run(debug=True)
