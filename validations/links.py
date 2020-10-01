@@ -1,7 +1,7 @@
 # Validaciones de enlaces
 
-def Github_link(url):
+def github_link(url):
     return "github.com" in url
 
-def Gitlab_link(url):
+def gitlab_link(url):
     return "gitlab.com" in url
