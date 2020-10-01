@@ -1,3 +1,4 @@
+![banner](https://raw.githubusercontent.com/pythonmurcia/gitcollab/master/branding/banner.png "banner")
 <h1 align="center">GitCollab</h1>
 <p align="center">
   <a href="https://github.com/pythonmurcia/gitcollab/blob/master/LICENSE" target="_blank">
