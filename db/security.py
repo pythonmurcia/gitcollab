@@ -3,22 +3,23 @@
 #   #12 Función para encriptar los datos del usuario en la base - 5
 #   #13 Función para desencriptar los datos de las bases de datos - 5
 
+import os
+from cryptography.fernet import Fernet
+
+# Funcion para escribir y guardar la clave. Se generará un archivo clave.key, es importante guardar este archivo por que es el que vamos a usar tanto para cifrar nuestro mensaje, como para luego descifrarlo de nuevo. Solo se tiene que hacer una vez.
+def generar_clave():
+    clave = Fernet.generate_key()
+    with open("clave.key", "wb") as archivo_clave:
+        archivo_clave.write(clave)
 
 
-import string
-import random
+# Funcion para cargar la clave
+def cargar_clave():
+    return open("clave.key").read()
 
-all_characters = string.printable
 
-# La clave puede volver a ser generada con el siguiente codigo
-# str_var = list(all_characters)
-# random.shuffle(str_var)
-# key = ''.join(str_var)
-key= """*mh~(B}\)#%lU7 oa4i0IZH_`WdLQ|DsjCzqr8b>k<3pS"X'yuM;,^26-/R!A{g]OJ19F5wvVn:tEPeG=[f@Y?K$cxT&N.+"""
+# Funcion para encriptar dato
+def encrypt(data: str, clave):
+     data = bytes(data, encoding = "utf-8")
+     return Fernet(clave).encrypt(data)
 
-def encrypt(data: str):
-    encrypted_message = ""
-    for character in data:
-        i = all_characters.find(character)
-        encrypted_message += key[i]
-    return encrypted_message
