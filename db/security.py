@@ -7,19 +7,19 @@ import os
 from cryptography.fernet import Fernet
 
 # Funcion para escribir y guardar la clave. Se generará un archivo clave.key, es importante guardar este archivo por que es el que vamos a usar tanto para cifrar nuestro mensaje, como para luego descifrarlo de nuevo. Solo se tiene que hacer una vez.
-def generar_clave():
-    clave = Fernet.generate_key()
-    with open("clave.key", "wb") as archivo_clave:
-        archivo_clave.write(clave)
+def generate_key():
+    key = Fernet.generate_key()
+    with open("key.key", "wb") as key_file:
+        key_file.write(key)
 
 
 # Funcion para cargar la clave
-def cargar_clave():
-    return open("clave.key").read()
+def load_key():
+    return open("key.key").read()
 
 
 # Funcion para encriptar dato
-def encrypt(data: str, clave):
+def encrypt(data: str, key):
      data = bytes(data, encoding = "utf-8")
-     return Fernet(clave).encrypt(data)
+     return Fernet(key).encrypt(data)
 
