@@ -3,4 +3,4 @@ En esta página se recogen todos los colaboradores de GitCollab, junto con el nu
 | Nombre de usuario | Enlaces de interés | Issues en los que ha contribuido |
 |-------------------|--------------------|----------------------------------|
 | JuanjoSalvador    | [Página](https://jsalvador.me/), [Twitter](https://twitter.com/Linuxneitor) | #1, #10, #11 |
-| iracaballero      |  | #12 |
+| iracaballero      | [LinkedIn](https://www.linkedin.com/in/iracema-caballero-aa0740140/), [Twitter](https://twitter.com/Iracema93) | #12, #13 |
