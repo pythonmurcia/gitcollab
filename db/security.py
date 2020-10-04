@@ -18,10 +18,11 @@ def generate_key():
 
 def load_key():
     """ Funcion para cargar la clave
-    :return: Clave para encriptar y desencriptar
-    :rtype: str
+    :return key: Clave para encriptar y desencriptar
+    :rtype key: str
     """
-    return open("key.key").read()
+    key = open("key.key").read()
+    return key
 
 
 def encrypt(data: str, key):
@@ -36,3 +37,17 @@ def encrypt(data: str, key):
     data = bytes(data, encoding = "utf-8")
     encrypted_data = Fernet(key).encrypt(data)
     return encrypted_data
+
+
+def decrypt(data: bytes, key):
+    """ Funcion para desencriptar un dato
+    :param data: El dato que vamos a desencriptar
+    :type data: bytes
+    :param key: Clave para encriptar y desencriptar
+    :type key: str
+    :return decrypted_data: El dato desencriptado
+    :rtype decrypted_data: str
+    """
+    decrypted_data = Fernet(key).decrypt(data)
+    decrypted_data = str(decrypted_data, encoding = "utf-8")
+    return decrypted_data
