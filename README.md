@@ -16,6 +16,8 @@ GitCollab es un proyecto open source creado por la organización de Python Murci
 
 **La idea del proyecto es simple, que otros  programadores puedan encontrar proyectos en los que contribuir y que tu puedas encontrar contribuidores para tus proyectos.**
 
+Queremos conseguir esto creando una página web con Flask. Una página web en la que tu puedas subir tus repositorios de GitHub y GitLab para que **otros programadores los encuentren**. También puedes **encontrar repositorios en los que te interese colaborar.**
+
 ### Para contribuir al proyecto, lee el archivo [contribute.md](https://github.com/pythonmurcia/gitcollab/blob/master/contribute.md)
 
 Recuerda que todos los commits deben de estar en Español y que cada directorio del proyecto tiene archivos que explican su funcionalidad.
