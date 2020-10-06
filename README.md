@@ -1,3 +1,4 @@
+![banner](https://raw.githubusercontent.com/pythonmurcia/gitcollab/master/branding/banner.png "banner")
 <h1 align="center">GitCollab</h1>
 <p align="center">
   <a href="https://github.com/pythonmurcia/gitcollab/blob/master/LICENSE" target="_blank">
@@ -14,6 +15,8 @@
 GitCollab es un proyecto open source creado por la organización de Python Murcia para el [HactoberfestES 2020](https://hacktoberfest.es.python.org/)
 
 **La idea del proyecto es simple, que otros  programadores puedan encontrar proyectos en los que contribuir y que tu puedas encontrar contribuidores para tus proyectos.**
+
+Queremos conseguir esto creando una página web con Flask. Una página web en la que tu puedas subir tus repositorios de GitHub y GitLab para que **otros programadores los encuentren**. También puedes **encontrar repositorios en los que te interese colaborar.**
 
 ### Para contribuir al proyecto, lee el archivo [contribute.md](https://github.com/pythonmurcia/gitcollab/blob/master/contribute.md)
 

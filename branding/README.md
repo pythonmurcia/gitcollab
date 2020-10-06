@@ -9,8 +9,15 @@ El archivo `logo.png` es el logo de GitCollab, de momento es provisional.
 
 
 ### banner.png
-`simple_banner.png` es, como su nombre indica uno de los banners de GitCollab, este banner es el logo situado a la izquierda sobre un fondo blanco
+`banner.png` es, como su nombre indica uno de los banners de GitCollab.
 
 | Archivo | Tareas relaccionadas | Descripción |
 |---------|----------------------|-------------|
-| `simple_banner.png`  | #2, #8	 | Este es un banner simple para GitCollab
+| `banner.png`  | #2, #8	 | Banner simple para GitCollab |
+
+### siluet.png
+`siluet.png` es, la silueta del logo en el color principal de la paleta de colores de GitCollab.
+
+| Archivo | Tareas relaccionadas | Descripción |
+|---------|----------------------|-------------|
+| `siluet.png`  | #2, #8	 | Silueta invertida del logotipo de GitCollab |
