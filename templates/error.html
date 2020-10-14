@@ -18,13 +18,13 @@
 
                     <div class="col align-self-center ">
                          <h1 class="display-1">Oops!</h1>
-                         <h1 class="display-2"> Error {{ error }}</h1>
+                         <h1 class="display-2"> Error {{ error.number }}</h1>
                     </div>
                     <div class="row justify-content-center">
                           <img id="image" src="{{ url_for('static', filename='images/error.png')}}" width="300" height="300">
                     </div>
                     <div class="col-md-8 align-self-center">
-                         <p class="lead">{{ description }}</p>
+                         <p class="lead">{{ error.description }}</p>
                     </div>
 
                </div>
