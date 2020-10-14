@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+
+
+{% block head %}
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock head %}
+
+
+
+
+{% block body %}
+
+<div class="container">
+     <div class="row justify-content-center align-items-center vh-100">
+         <div class="col-sm-8">
+               <div class="row row-cols-2 justify-content-center align-self-center">
+
+                    <div class="col align-self-center ">
+                         <h1 class="display-1">Oops!</h1>
+                         <h1 class="display-2"> Error {{ error.number }}</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                          <img id="image" src="{{ url_for('static', filename='images/error.png')}}" width="300" height="300">
+                    </div>
+                    <div class="col-md-8 align-self-center">
+                         <p class="lead">{{ error.description }}</p>
+                    </div>
+
+               </div>
+               <div class="col-sm4 row justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-lg align-items-center">Home Page</button>
+               </div>
+         </div>
+     </div>
+</div>
+
+{% endblock body %}
+
+
+
