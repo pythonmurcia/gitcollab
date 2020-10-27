@@ -1,4 +1,4 @@
-body {
+/* body {
    background-color: #FFFDFD;
 }
 
@@ -6,4 +6,295 @@ body {
    background-color: #00FFF7;
    border-radius: 5px;
    box-shadow: 5px 5px 0px #888DA7;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400|Playfair+Display:400,700,400italic|Libre+Baskerville:400,700,400italic|Muli:300,400|Open+Sans:400,300,700|Oswald:400,700|Raleway:400,100,300,700|Montserrat:400,700|Merriweather:400,300,300italic,400italic,700|Bree+Serif|Vollkorn:400italic,400,700|Abril+Fatface|Cardo:400,400italic);
+
+html {
+  box-sizing: border-box;
 }
+
+* {
+  box-sizing: border-box;
+}
+/* Basically just a bunch of typeface classes, some helper classes(letter-spacing, font-weight, etc.), decorative classes(line-on-headers, double-lines, etc). Three types of bg, image, gradient and solid color. I do this for testing headings/hero-image typography. Now there are ten presets here, but you can mix everything. I know that this brings to classivitis, but I still didn't dwelved into Saas, it is next on my learning roadmap, but I will create a fork soon with Saas and variables. */
+
+/* Preset 1 ---- Bold/cursive  */
+/* Preset 2 ---- Thin/bold  */
+/* Preset 3 ---- Add emphasis with color */
+/* Preset 4 ---- Thin/Super bold/thin */
+/* Preset 5 ---- Playing with serifs */
+/* Preset 6 ---- Super contrast */
+/* Preset 7 ---- Vertical text */
+/* Preset 8 ---- Playful type */
+/* Preset 9 ---- Middle flourish */
+/* Preset 10 ---- Overlay text */
+
+/* ==== Font sizes(based on Typeplate's scale) ==== */
+html {
+  font: normal 112.5%/1.65 serif; /* base font size 18px with 1.65 line-height */
+  -moz-font-feature-settings: "liga=1, dlig=1"; /* common and discretionary ligatures */
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1;
+  margin-top: 0;
+  color: #2e2e2e;
+  display: inline-block;
+  position: relative;
+}
+p{
+  text-decoration: none !important;
+  margin-top: 0.7rem;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1
+}
+a {
+  text-decoration: none !important;
+}
+.gigantic{font-size: 11rem;}
+.supersize{font-size: 8rem;}
+.tera {font-size: 6.5rem; /* 117 / 18 = 6.5 */margin-bottom: 0.25385rem;}
+.giga {font-size: 5rem; /* 90 / 18 = 5 */margin-bottom: 0.33rem;}
+.mega {font-size: 4rem; /* 72 / 18 = 4 */margin-bottom: 0.4125rem;}
+.alpha {font-size: 3.33333rem; /* 60 / 18 = 3.3333 */margin-bottom: 0.495rem;}
+.beta {font-size: 2.6667rem; /* 48 / 18 = 2.6667 */margin-bottom: 0.61875rem;}
+.gamma {font-size: 2rem; /* 36 / 18 = 2 */margin-bottom: 0.825rem;}
+.delta {font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */margin-bottom: 1.2375rem;}
+.epsilon {font-size: 1.16667rem; /* 21 / 18 = 1.1667 */margin-bottom: 1.41429rem;}
+.zeta {font-size: 1rem; /* 18 = 18 × 1 */margin-bottom: 1.65rem;}
+
+.up {text-transform: uppercase;}
+/* ==== Typefaces  ==== */
+.open-sans{font-family: 'Open Sans';}
+.lato{font-family: 'Lato'}
+.playfair-display{font-family: 'Playfair Display'}
+.libre-baskerville{font-family: 'Libre Baskerville'}
+.oswald{font-family: 'Oswald'}
+.montserrat{font-family: 'Montserrat'}
+.vollkorn{font-family: 'Vollkorn'}
+.bree-serif{font-family: 'Bree Serif'}
+.raleway{font-family: 'Raleway'}
+.merriweather{font-family: 'Merriweather'}
+.cardo{font-family: 'Cardo'}
+.abril-fatface{font-family: 'Abril Fatface'}
+.muli{font-family: 'Muli'}
+
+/* ==== Weights, styles, letterspacing, etc. ==== */
+
+.thin{font-weight: 100;}
+.light{font-weight: 300;}
+.regular{font-weight: 400;}
+.bold{font-weight: 700;}
+.italic{font-style: italic;}
+.normal{font-style: normal;}
+.ls-small{letter-spacing: 2px;}
+.ls-medium{letter-spacing: 4px;}
+.ls-large{letter-spacing: 8px;}
+.ls-xlarge{letter-spacing: 12px;}
+.uppercase{text-transform: uppercase;}
+.color-emphasis-1{color: #FF4056}
+.color-emphasis-2{color: #000;}
+.color-emphasis-3{color: #60547c}
+.text-left{text-align: left;}
+.line-height-small{line-height: 1.2}
+.line-height-medium{line-height: 1.45}
+.line-height-large{line-height: 1.65}
+
+/* ===== NavVar style and nav logo style ==== */
+.navbar {
+  background: #6CFCA4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6CFCA4, #B4FCD4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6CFCA4, #B4FCD4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ===== Flourish, heading horizontal lines, etc. ==== */
+.text-overlay:before{
+  content: attr(data-text);
+  z-index: 99;
+  width: 98%;
+  height: 50px;
+  background-color: hsla(0,0%,0%,0.6);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 50px;
+  text-align: center;
+  color:#f0ad00;
+  font-family: 'bree serif';
+  font-style: normal;
+  font-size: 1.3rem;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+/* ==== General styles ==== */
+ #bg {
+  position: relative;
+  height: 93vh;
+  background: #6CFCA4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6CFCA4, #B4FCD4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6CFCA4, #B4FCD4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width: 720px) {#bg {height: 91vh;}}
+@media only screen and (max-width: 420px) {#bg {height: 90vh;}}
+@media only screen and (max-width: 360px) {#bg {height: 89vh;}}
+
+#bg .bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bg {
+  max-width: 460px;
+  width: 100%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.bg .title {
+  color: #121212;
+  height: 158px;
+  line-height: 153px;
+}
+
+.bg .title h1 {
+  font-family: 'Lato', sans-serif;
+  color: #222;
+  letter-spacing: 10px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+}
+
+.bg.title h1 {
+  text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
+}
+
+.bg p {
+  font-family: 'Lato', sans-serif;
+  color: #404040;
+  font-size: 1.3rem;
+  font-weight: 450;
+  margin-top: 10%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .bg .title {
+    height: 122px;
+    line-height: 122px;
+  }
+
+  .bg .title h1 {
+      font-size: 122px;
+  }
+  .tera {
+    font-size: 3.1em !important;
+  }
+}
+
+/*============================SOCIAL MEDIA ICONS===========================*/
+.social-icons {
+  padding-top: 1rem;
+  text-align: center;
+}
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+}
+.social-icons li a {
+  border-bottom: none;
+}
+.social-icons li img {
+  width:50px;
+  height:50px;
+  margin-right: 20px;
+}
+
+/* Media queries */
+ @media screen and (min-width: 1440px) {
+   section{height:700px}
+ }
+
+
+
+/*==================================================ERRORS=========================*/
+#error {
+   position: relative;
+   height: 100vh;
+   background: #6CFCA4;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #6CFCA4, #B4FCD4);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #6CFCA4, #B4FCD4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+ #error .error {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+ }
+ 
+ .error {
+   max-width: 460px;
+   width: 100%;
+   text-align: center;
+   line-height: 1.4;
+ }
+ 
+ .error .error-label {
+   height: 158px;
+   line-height: 153px;
+ }
+ 
+ .error .error-label h1 {
+   font-family: 'Lato', sans-serif;
+   color: #222;
+   font-size: 9.5rem;
+   letter-spacing: 10px;
+   margin: 0px 0px 40px 0px;
+   font-weight: 700;
+   text-shadow: 2px 2px 0px #c9c9c9, -2px -2px 0px #c9c9c9;
+ }
+ 
+ .error .error-label h1>span {
+   text-shadow: 2px 2px 0px #ffab00, -2px -2px 0px #ffab00, 0px 0px 8px #ff8700;
+ }
+ 
+ .error p {
+   font-family: 'Lato', sans-serif;
+   color: #c9c9c9;
+   font-size: 1.3rem;
+   font-weight: 450;
+   margin-top: 10%;
+   margin-bottom: 15px;
+ }
+ 
+ @media only screen and (max-width: 480px) {
+   .error .error-label {
+     height: 122px;
+     line-height: 122px;
+   }
+ 
+   .error .error-label h1 {
+       font-size: 122px;
+   }
+ }
