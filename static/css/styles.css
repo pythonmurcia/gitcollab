@@ -1,0 +1,9 @@
+body {
+   background-color: #FFFDFD;
+}
+
+#image {
+   background-color: #00FFF7;
+   border-radius: 5px;
+   box-shadow: 5px 5px 0px #888DA7;
+}
